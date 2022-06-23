@@ -8,6 +8,12 @@ from watchdog.events import FileSystemEventHandler
 
 source = 'C:\\Users\\Pythadela\\Downloads'
 
+dest_dir_sfx = 'C:\\Users\\Pythadela\\Desktop\\Downloads\\Sound'
+dest_dir_music = 'C:\\Users\\Pythadela\\Desktop\\Downloads\\Music'
+dest_dir_video = 'C:\\Users\\Pythadela\\Desktop\\Downloads\\Video'
+dest_dir_image = 'C:\\Users\\Pythadela\\Desktop\\Downloads\\Images'
+dest_dir_documents = 'C:\\Users\\Pythadela\\Desktop\\Downloads\\Documents'
+
 
 class MoverHandler(FileSystemEventHandler):
     def on_modified(self, event):
